@@ -1,4 +1,4 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 
 
 import random as np
@@ -19,4 +19,8 @@ def rand_arr(a, b, *args):
     np.random.seed(0)
     return np.random.rand(*args) * (b - a) + a
 
-
+class LstmParam:
+    def __init__(self, mem_cell_ct, x_dim):
+        self.mem_cell_ct = mem_cell_ct
+        self.x_dim = x_dim
+        concat_len = x_dim + mem_cell_ct
