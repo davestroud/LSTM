@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# https://github.com/Manik9/LSTMs/blob/master/lstm.py
 
 import random as np
 import math
@@ -24,3 +24,8 @@ class LstmParam:
         self.mem_cell_ct = mem_cell_ct
         self.x_dim = x_dim
         concat_len = x_dim + mem_cell_ct
+        # weight matrices
+        self.wg = rand_arr(-0.1, 0.1, mem_cell_ct, concat_len)
+        self.wi = rand_arr(-0.1, 0.1, mem_cell_ct, concat_len)
+        self.wf = rand_arr(-0.1, 0.1, mem_cell_ct, concat_len)
+        self.wo = rand_arr(-0.1, 0.1, mem_cell_ct, concat_len)
