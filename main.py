@@ -29,3 +29,6 @@ class LstmParam:
         self.wi = rand_arr(-0.1, 0.1, mem_cell_ct, concat_len)
         self.wf = rand_arr(-0.1, 0.1, mem_cell_ct, concat_len)
         self.wo = rand_arr(-0.1, 0.1, mem_cell_ct, concat_len)
+
+
+        # this is a test
