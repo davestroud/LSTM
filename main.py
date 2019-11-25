@@ -32,5 +32,6 @@ class LstmParam:
         # bias terms
         self.bg = rand_arr(-0.1, 0.1, mem_cell_ct)
         self.bi = rand_arr(-0.1, 0.1, mem_cell_ct)
-        self.bf = rand_arr(-0.1, 0.1,, mem_cell_ct)
-        self.bo = rand_arr(-0.1, 0.1, mem_cell_ct)
+        self.bf = rand_arr(-0.1, 0.1, mem_cell_ct)
+        self.bo = rand_arr(-0.1, mem_cell_ct)
+        # diffs (derivatives of loss function w.r.t all parameters)
